@@ -10,83 +10,86 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
-  <nav class="bg-slate-800 px-6 py-4">
-  <div class="flex justify-between items-center">
-    <h1 class="text-xl font-bold text-emerald-400">TI 2025</h1>
-
-    <!-- Desktop Menu -->
-    <div class="hidden md:flex space-x-6">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="about.html" class="nav-link">Tentang</a>
-      <a href="projects.html" class="nav-link">Project</a>
-      <a href="members.html" class="nav-link">Anggota</a>
-      <a href="blog.html" class="nav-link">Blog</a>
-    </div>
-
-    <!-- Hamburger -->
-    <button id="menu-btn" class="md:hidden text-emerald-400 text-2xl">
-      ☰
-    </button>
-  </div>
-
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden flex flex-col mt-4 space-y-4 md:hidden">
-    <a href="index.html">Home</a>
-    <a href="about.html">Tentang</a>
-    <a href="projects.html">Project</a>
-    <a href="members.html">Anggota</a>
-    <a href="blog.html">Blog</a>
-  </div>
-</nav>
-
 <body class="bg-slate-900 text-white">
 
-  <nav class="flex justify-between items-center px-8 py-4 bg-slate-800">
-    <h1 class="text-xl font-bold text-emerald-400">TI 2025</h1>
-    <div class="space-x-6">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="about.html" class="nav-link">Tentang</a>
-      <a href="projects.html" class="nav-link">Project</a>
+  <!-- Navbar -->
+  <nav class="bg-slate-800 px-6 py-4">
+    <div class="flex justify-between items-center">
+      <h1 class="text-xl font-bold text-emerald-400">TI 2025</h1>
+
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">Tentang</a>
+        <a href="projects.html" class="nav-link text-emerald-400 font-semibold">Project</a>
+        <a href="members.html" class="nav-link">Anggota</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+      </div>
+
+      <button id="menu-btn" class="md:hidden text-emerald-400 text-2xl">
+        ☰
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden flex flex-col mt-4 space-y-4 md:hidden">
+      <a href="index.html">Home</a>
+      <a href="about.html">Tentang</a>
+      <a href="projects.html" class="text-emerald-400 font-semibold">Project</a>
+      <a href="members.html">Anggota</a>
+      <a href="blog.html">Blog</a>
     </div>
   </nav>
 
+  <!-- Section -->
   <section class="py-20 px-8">
     <h2 class="text-4xl font-bold text-center mb-12 text-emerald-400">
       Project Showcase
     </h2>
 
-    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
-      <div class="bg-slate-800 p-6 rounded-2xl">
+      <!-- Project Card -->
+      <div class="bg-slate-800 p-6 rounded-2xl 
+                  hover:bg-slate-700 
+                  hover:scale-105 
+                  transition duration-300 
+                  shadow-lg">
+
         <h3 class="text-xl font-semibold mb-2">Website Portfolio</h3>
+
         <p class="text-gray-400 text-sm mb-4">
           HTML, Tailwind CSS
         </p>
-        <a href="#" class="text-emerald-400 text-sm">GitHub →</a>
+
+        <a href="#" class="text-emerald-400 text-sm hover:underline">
+          GitHub →
+        </a>
       </div>
 
-      <div class="bg-slate-800 p-6 rounded-2xl">
+      <!-- Project Card -->
+      <div class="bg-slate-800 p-6 rounded-2xl hover:bg-slate-700 hover:scale-105 transition duration-300 shadow-lg">
         <h3 class="text-xl font-semibold mb-2">Aplikasi Kasir</h3>
-        <p class="text-gray-400 text-sm mb-4">
-          JavaScript
-        </p>
-        <a href="#" class="text-emerald-400 text-sm">GitHub →</a>
+        <p class="text-gray-400 text-sm mb-4">JavaScript</p>
+        <a href="#" class="text-emerald-400 text-sm hover:underline">
+          GitHub →
+        </a>
       </div>
 
-      <div class="bg-slate-800 p-6 rounded-2xl">
+      <!-- Project Card -->
+      <div class="bg-slate-800 p-6 rounded-2xl hover:bg-slate-700 hover:scale-105 transition duration-300 shadow-lg">
         <h3 class="text-xl font-semibold mb-2">Sistem Informasi</h3>
-        <p class="text-gray-400 text-sm mb-4">
-          Laravel
-        </p>
-        <a href="#" class="text-emerald-400 text-sm">GitHub →</a>
+        <p class="text-gray-400 text-sm mb-4">Laravel</p>
+        <a href="#" class="text-emerald-400 text-sm hover:underline">
+          GitHub →
+        </a>
       </div>
 
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="bg-slate-800 text-center py-6">
     <p class="text-gray-400 text-sm">
-      © 2026 TI 2025
+      © 2026 TI 2025 - Universitas Nurul Jadid
     </p>
   </footer>
 
