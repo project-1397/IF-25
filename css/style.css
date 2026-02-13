@@ -1,26 +1,20 @@
+/* Global */
 body {
   font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
 }
 
+/* Navbar Link */
 .nav-link {
-  transition: 0.3s;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
 .nav-link:hover {
   color: #34d399;
 }
 
-body {
-  font-family: 'Inter', sans-serif;
-  scroll-behavior: smooth;
-}
-
-/* Navbar hover */
-.nav-link {
-  position: relative;
-  transition: 0.3s;
-}
-
+/* Underline animation */
 .nav-link::after {
   content: "";
   position: absolute;
@@ -29,7 +23,7 @@ body {
   background: #34d399;
   left: 0;
   bottom: -4px;
-  transition: 0.3s;
+  transition: width 0.3s ease;
 }
 
 .nav-link:hover::after {
