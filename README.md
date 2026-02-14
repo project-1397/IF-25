@@ -1,4 +1,4 @@
-# project-1397/IF-25 — Teknik Informatika
+# project-1397/TI-25 — Teknik Informatika
 
 Situs statis profil angkatan **TI 2025**: kumpulan halaman HTML sederhana untuk menampilkan informasi tentang angkatan, anggota, proyek, dan blog.
 
@@ -38,8 +38,8 @@ Sangat sederhana—cukup buka file `index.html` di browser, atau jalankan server
 1. Clone repositori:
 
 ```bash
-git clone https://github.com/project-1397/IF-25.git
-cd IF-25
+git clone https://github.com/project-1397/TI-25.git
+cd TI-25
 ```
 
 2. Cara cepat (buka langsung):
